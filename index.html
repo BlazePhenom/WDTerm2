@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Fitness Tracker</h1>
+        <button id="theme-toggle">
+            <span id="theme-icon">🌙</span> Dark Mode
+        </button>
+    </header>
+    <main>
+        <section id="workout-section">
+            <h2>Log Your Workout</h2>
+            <form id="workout-form">
+                <input type="text" id="exercise" placeholder="Exercise" required>
+                <input type="number" id="duration" placeholder="Duration (min)" required>
+                <button type="submit">Log Workout</button>
+            </form>
+            <ul id="workout-list"></ul>
+        </section>
+
+        <section id="meal-section">
+            <h2>Plan Your Meals</h2>
+            <form id="meal-form">
+                <input type="text" id="meal" placeholder="Meal Name" required>
+                <button type="submit">Add Meal</button>
+            </form>
+            <ul id="meal-list"></ul>
+        </section>
+
+        <section id="nutritionix-meal-suggestions">
+            <h2>Meal Suggestions</h2>
+            <label for="meal-query">Enter a food item:</label>
+            <input type="text" id="meal-query" placeholder="e.g. Chicken Salad">
+            <button id="generate-meal">Get Nutrition Info</button>
+            <div id="nutritionix-output"></div>
+        </section>
+
+        <section id="progress-section">
+            <h2>Progress</h2>
+            <canvas id="progress-chart"></canvas>
+        </section>
+
+        <section id="notifications">
+            <h2>Reminders & Notifications</h2>
+            <button id="enable-notifications">Enable Notifications</button>
+            <div id="notification-output"></div>
+        </section>
+
+        <section id="gamification">
+            <h2>Achievements & Challenges</h2>
+            <p>Complete workouts and eat healthy meals to earn badges!</p>
+            <div id="badges-container">
+                <div class="badge locked"><p>🔥 Workout Warrior: Complete 10 workouts to unlock!</p></div>
+                <div class="badge locked"><p>🥇 Protein Pro: Eat 5 high-protein meals to unlock!</p></div>
+                <div class="badge locked"><p>🏅 Health Master: Complete 100 push-ups & 2 salad meals to unlock!</p></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
