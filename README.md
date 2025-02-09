@@ -11,6 +11,8 @@ The **Fitness Tracker** is a web-based application designed to help users track 
 
 - **Workout Logging:** Users can log exercises with duration.
 - **Meal Planning:** Add meals manually to track diet.
+- **Calories:** Displays amount of calories in a food dish
+- **Nutrients:** Displays amount of nutrients present in the food dish
 - **Progress Visualization:** Displays workouts in a bar chart.
 - **Gamification:** Unlock badges based on achievements.
 - **Reminders & Notifications:** Enable notifications for workout and meal tracking.
